@@ -1818,6 +1818,7 @@ aside.rounded-lg {
 .character-portrait {
   --portrait-x: 50%;
   --portrait-y: 8%;
+  --portrait-image: url("/doraemon-friends.png");
   position: relative;
   display: inline-block;
   flex: 0 0 auto;
@@ -1825,7 +1826,7 @@ aside.rounded-lg {
   width: 4.35rem;
   border-radius: 50%;
   background-color: color-mix(in srgb, var(--character-color) 18%, white);
-  background-image: url("/doraemon-friends.png");
+  background-image: var(--portrait-image);
   background-position: var(--portrait-x) var(--portrait-y);
   background-repeat: no-repeat;
   background-size: 420% auto;
