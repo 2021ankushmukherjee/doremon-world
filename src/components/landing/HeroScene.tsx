@@ -12,7 +12,8 @@ import { gadgets } from "@/data/gadgets";
 import { useAudio } from "@/hooks/useAudio";
 import { useAppStore } from "@/store/appStore";
 
-const DORAEMON_IMAGE_URL = "/doraemon-flying.png";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const DORAEMON_IMAGE_URL = `${basePath}/doraemon-flying.png`;
 
 export function HeroScene() {
   const [isHappy, setIsHappy] = useState(false);
